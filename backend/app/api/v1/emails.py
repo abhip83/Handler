@@ -5,6 +5,7 @@ from fastapi import APIRouter, HTTPException
 
 from app.schemas.email import EmailCreate, EmailResponse
 
+from app.services.classifier import classify_email
 
 router = APIRouter(
     prefix="/emails",
@@ -16,17 +17,26 @@ emails_db: list[dict] = []
 
 @router.post("", response_model=EmailResponse, status_code=201)
 def create_email(email: EmailCreate):
+
+    classification = classify_email(
+        subject=email.subject,
+        body=email.body,
+    )
+
     new_email = {
         "id": str(uuid4()),
         "sender": str(email.sender),
         "recipient": str(email.recipient),
         "subject": email.subject,
         "body": email.body,
-        "status": "new",
+        "status": "classified",
+        "category": classification.category,
+        "confidence": classification.confidence,
         "received_at": datetime.now(timezone.utc),
     }
 
     emails_db.append(new_email)
+
     return new_email
 
 
