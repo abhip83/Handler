@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "subject": "Rate Request – FCL Shanghai to Los Angeles, 2x40HC",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 2,
+    "subject": "Quote Needed – LTL Chicago to Dallas",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 3,
+    "subject": "RE: Air Freight Quote – Frankfurt to JFK",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 4,
+    "subject": "Quote Request: Reefer Container Miami to Rotterdam",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 5,
+    "subject": "Trucking Quote – Flatbed, Houston to Denver",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 6,
+    "subject": "Quote – FCL Import Vietnam to Long Beach",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 7,
+    "subject": "Domestic LTL Rate Request – Multiple Lanes",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 8,
+    "subject": "Quote Request – Project Cargo, Oversized Equipment",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 9,
+    "subject": "Air Export Quote – Los Angeles to Sydney",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 10,
+    "subject": "RFQ – Dedicated Truckload Lane, Weekly",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 11,
+    "subject": "Quote for Container Drayage – Port of Savannah",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 12,
+    "subject": "Quote Request – Bonded Warehouse & Customs Clearance",
+    "expected": "quote_request",
+    "predicted": "quote_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 13,
+    "subject": "Status Update Needed – PO# 88213, Container MSCU7712345",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 14,
+    "subject": "Where is my shipment? Tracking# 4471029938",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 15,
+    "subject": "RE: Delay Notification – Booking# BKNG55201",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 16,
+    "subject": "POD Confirmation Needed – Delivery #90144",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 17,
+    "subject": "Container Stuck at Customs – Need Update",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 18,
+    "subject": "Shipment Status Inquiry – SO# 33218",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 19,
+    "subject": "Vessel Schedule Change – Booking BK-88823",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 20,
+    "subject": "Missing Scan – Shipment Not Updating",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 21,
+    "subject": "RE: Damaged Freight – Claim Reference Needed",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 22,
+    "subject": "Update on Air Shipment AWB 176-88213456",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 23,
+    "subject": "ETA Confirmation Request – Container HLXU4432109",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 24,
+    "subject": "Shipment Delivered Early – Confirmation Needed",
+    "expected": "shipment_status",
+    "predicted": "shipment_status",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 25,
+    "subject": "Booking Request – 1x40HC, Shenzhen to Long Beach",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 26,
+    "subject": "Truckload Booking – Dry Van, Atlanta to Miami",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 27,
+    "subject": "Booking Confirmation Request – Reefer, Salinas to Chicago",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 28,
+    "subject": "Ocean Booking Request – LCL Rotterdam to New York",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 29,
+    "subject": "Air Freight Booking – Miami to Bogotá",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 30,
+    "subject": "Booking Request – Intermodal Rail, Chicago to Los Angeles",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 31,
+    "subject": "Flatbed Booking – Steel Coils, Pittsburgh to Cleveland",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 32,
+    "subject": "Booking Request – Hazmat Tanker, Houston to New Orleans",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 33,
+    "subject": "Booking Confirmation Needed – Booking Ref BK772341",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 34,
+    "subject": "Booking Request – LTL Pickup Tomorrow",
+    "expected": "booking_request",
+    "predicted": "booking_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 35,
+    "subject": "Request for Bill of Lading – Shipment #55210",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 36,
+    "subject": "Certificate of Origin Needed – Container TCNU5528817",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 37,
+    "subject": "Request: Commercial Invoice & Packing List",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 38,
+    "subject": "Proof of Delivery Request – Multiple Shipments",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 39,
+    "subject": "Dangerous Goods Declaration – Needed Before Departure",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 40,
+    "subject": "Insurance Certificate Request – Cargo Value $85,000",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 41,
+    "subject": "Request for Weight & Inspection Certificate",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 0.98,
+    "correct": true
+  },
+  {
+    "id": 42,
+    "subject": "Customs Entry Documents – Entry #F1234567890",
+    "expected": "document_request",
+    "predicted": "document_request",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 43,
+    "subject": "Office Holiday Party – Save the Date!",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 44,
+    "subject": "Your Amazon Order Has Shipped",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 0.95,
+    "correct": true
+  },
+  {
+    "id": 45,
+    "subject": "Reminder: Timesheet Submission Due Friday",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 46,
+    "subject": "Newsletter: 5 Tips for Better Work-Life Balance",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 47,
+    "subject": "Congratulations on Your Work Anniversary!",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 48,
+    "subject": "IT Maintenance Notice – Scheduled Downtime This Weekend",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 49,
+    "subject": "Win a Free Vacation! Click to Claim Your Prize",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  },
+  {
+    "id": 50,
+    "subject": "Team Lunch Friday – RSVP Needed",
+    "expected": "unrelated",
+    "predicted": "unrelated",
+    "confidence": 1.0,
+    "correct": true
+  }
+]
