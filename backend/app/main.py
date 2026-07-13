@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 
 from app.api.v1.emails import router as emails_router
+from app.db.database import Base, engine
+from app.models.email import Email
+
+
+Base.metadata.create_all(bind=engine)
 
 
 app = FastAPI(
@@ -8,7 +13,6 @@ app = FastAPI(
     description="AI-powered email operations platform for logistics companies",
     version="0.1.0",
 )
-
 app.include_router(
     emails_router,
     prefix="/api/v1"
