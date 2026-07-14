@@ -6,6 +6,7 @@ from app.repositories.email_repository import EmailRepository
 from app.services.classifier import classify_email
 from app.services.decision_engine import DecisionEngine
 from app.services.extractor import extract_shipment_information
+from app.services.workflow_service import WorkflowService
 
 
 class EmailService:
@@ -13,6 +14,7 @@ class EmailService:
     def __init__(self, db):
         self.db = db
         self.decision_engine = DecisionEngine()
+        self.workflow_service = WorkflowService(db)
 
     def process_email(self, email):
 
@@ -37,7 +39,7 @@ class EmailService:
         print(decision.model_dump())
         print("================================")
 
-        # STEP 4: Build database object
+        # STEP 4: Build Email ORM object
         db_email = Email(
             id=str(uuid4()),
 
@@ -52,10 +54,7 @@ class EmailService:
             category=classification.category.value,
             confidence=classification.confidence,
 
-            # ==============================
             # AI Extracted Shipment Fields
-            # ==============================
-
             customer_name=shipment.customer_name,
             origin=shipment.origin,
             destination=shipment.destination,
@@ -69,10 +68,7 @@ class EmailService:
             incoterm=shipment.incoterm,
             special_instructions=shipment.special_instructions,
 
-            # ==============================
             # AI Decision Fields
-            # ==============================
-
             action=decision.action.value,
             department=decision.department.value,
             priority=decision.priority.value,
@@ -82,10 +78,21 @@ class EmailService:
             received_at=datetime.now(timezone.utc),
         )
 
+        # STEP 5: Save email
         saved_email = EmailRepository.create(
             self.db,
             db_email,
         )
+
+        # STEP 6: Automatically create workflow
+        workflow = self.workflow_service.create_workflow(
+            email_id=saved_email.id,
+        )
+
+        print("========== WORKFLOW CREATED ==========")
+        print(f"Workflow ID: {workflow.id}")
+        print(f"Status: {workflow.status}")
+        print("======================================")
 
         return saved_email
 

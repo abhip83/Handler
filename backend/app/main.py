@@ -1,8 +1,12 @@
 from fastapi import FastAPI
 
 from app.api.v1.emails import router as emails_router
+from app.api.v1.workflows import router as workflows_router
+
 from app.db.database import Base, engine
+
 from app.models.email import Email
+from app.models.workflow import Workflow
 
 
 Base.metadata.create_all(bind=engine)
@@ -13,15 +17,23 @@ app = FastAPI(
     description="AI-powered email operations platform for logistics companies",
     version="0.1.0",
 )
+
 app.include_router(
     emails_router,
-    prefix="/api/v1"
+    prefix="/api/v1",
+)
+
+app.include_router(
+    workflows_router,
+    prefix="/api/v1",
 )
 
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to Handler API"}
+    return {
+        "message": "Welcome to Handler API"
+    }
 
 
 @app.get("/health")
@@ -29,5 +41,5 @@ def health_check():
     return {
         "status": "healthy",
         "service": "handler-api",
-        "version": "0.1.0"
+        "version": "0.1.0",
     }
